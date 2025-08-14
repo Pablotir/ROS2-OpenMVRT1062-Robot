@@ -6,7 +6,7 @@ import os
 # ----------------------
 # CONFIG
 # ----------------------
-OPENMV_IP = "192.168.1.123"  # replace with OpenMV IP from Wi-Fi
+OPENMV_IP = "192.168.1.123"  # replace with OpenMV IP
 SAVE_FOLDER = "openmv_wifi_images"
 DISPLAY_IMAGES = True
 
