@@ -1,0 +1,16 @@
+services:
+  robot:
+    build:
+      context: .
+      dockerfile: ros2.Dockerfile
+      args:
+        - ROS_DISTRO=iron
+    network_mode: "host"
+    runtime: nvidia
+    environment:
+      - DISPLAY=${DISPLAY}
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+    volumes:
+      - ./src:/root/ros2_ws/src
+    command: ["bash"]
